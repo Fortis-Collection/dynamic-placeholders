@@ -1,0 +1,88 @@
+# Custom
+_Libraries/
+
+# MAC OS
+.DS_Store
+
+# Windows OS
+Thumbs.db
+
+# Visual Studio
+*.obj
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.o
+*.lo
+*.la
+*.al
+.libs
+*.so
+*.so.[0-9]*
+*.a
+*.pyc
+*.pyo
+*.rej
+*.Publish.xml
+*~
+.*.swp
+*.lib
+*.sbr
+*.sln.ide
+[Bb]in
+[Dd]ebug/
+[Rr]elease*/
+obj/
+_ReSharper*/
+[Tt]est[Rr]esult*
+BuiltFiles_*
+Code/packages/
+Source/packages/
+FakesAssemblies/
+
+# Dreamweaver
+_notes/
+
+# Sitecore
+TDS_Build/
+IconCache/
+_Deploy/
+T4RenderCache/
+*.csproj.sitecore
+
+# PHP/Web Storm
+.idea/
+
+# SASS
+.sass-cache/
+
+# Node Modules
+node_modules/
+node_modules/*
+
+# Compiled CSS
+_compiled-css/
+
+# Comiled JS
+_compiled-js/
+
+# Xcode
+build/*
+*.xcuserdatad
+
+# Eclipse
+
+# Flash Builder
