@@ -1,23 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>Fortis</id>
-        <version>3.5.2.1</version>
-        <title>Fortis</title>
-        <authors>Jason Bert,Kern Herskind Nightingale,Richard Seal</authors>
+        <id>DynamicPlaceholders</id>
+        <version>1.1.0.0</version>
+        <title>Sitecore Dynamic Placeholders</title>
+        <authors>Jason Bert</authors>
         <owners>Fortis Collections</owners>
-        <licenseUrl>https://github.com/Fortis-Collection/fortis/blob/master/license.txt</licenseUrl>
-        <projectUrl>http://fortis.ws/</projectUrl>
+        <licenseUrl>https://github.com/Fortis-Collection/dynamic-placeholders/blob/master/license.txt</licenseUrl>
+        <projectUrl>http://fortis.ws/fortis-collection/dynamic-placeholders/</projectUrl>
         <iconUrl>http://fortis.ws/wp-content/uploads/2014/11/Logo.png</iconUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>A framework for creating a strongly typed model of the Sitecore API
+        <description>Allows you to add dynamic placeholders in Sitecore
 
-Requires: Sitecore 7.2+</description>
-        <releaseNotes>* Fixed the Value property on the link field wrapper and now returns a Guid rather than a string</releaseNotes>
-        <copyright>Copyright 2014</copyright>
-        <tags>Sitecore Fortis</tags>
+* Requires Sitecore 8</description>
+        <releaseNotes>* Added ability to have more than one dynamic placeholder in a single rendering</releaseNotes>
+        <copyright>Copyright 2015</copyright>
+        <tags>Sitecore</tags>
     </metadata>
     <files>
-        
+        <file src="content\App_Config\Include\DynamicPlaceholders\DynamicPlaceholders.config" target="content\App_Config\Include\DynamicPlaceholders\DynamicPlaceholders.config" />
+        <file src="lib\net45\DynamicPlaceholders.dll" target="lib\net45\DynamicPlaceholders.dll" />
     </files>
 </package>
