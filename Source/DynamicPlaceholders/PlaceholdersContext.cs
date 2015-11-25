@@ -32,9 +32,9 @@ namespace DynamicPlaceholders
 			if ((count = Placeholders.Count(dp => dp.StartsWith(placeholder))) > 0)
 			{
 				placeholder = string.Format("{0}_{1}", placeholder, count);
-
-				Placeholders.Add(placeholder);
 			}
+
+			Placeholders.Add(placeholder);
 
 			return placeholder;
 		}
