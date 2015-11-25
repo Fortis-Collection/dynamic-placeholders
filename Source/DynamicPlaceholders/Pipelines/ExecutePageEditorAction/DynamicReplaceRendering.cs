@@ -2,11 +2,6 @@
 using Sitecore.Diagnostics;
 using Sitecore.Layouts;
 using Sitecore.Pipelines.ExecutePageEditorAction;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DynamicPlaceholders.Pipelines.ExecutePageEditorAction
 {
