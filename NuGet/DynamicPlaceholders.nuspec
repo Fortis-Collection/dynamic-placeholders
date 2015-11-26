@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>DynamicPlaceholders</id>
-        <version>1.1.0.0</version>
+        <version>1.1.0.1</version>
         <title>Sitecore Dynamic Placeholders</title>
         <authors>Jason Bert</authors>
         <owners>Fortis Collections</owners>
@@ -13,7 +13,7 @@
         <description>Allows you to add dynamic placeholders in Sitecore
 
 * Requires Sitecore 8</description>
-        <releaseNotes>* Added ability to have more than one dynamic placeholder in a single rendering</releaseNotes>
+        <releaseNotes>* Fixed bugs with multiple placeholders of the same name in the same rendering</releaseNotes>
         <copyright>Copyright 2015</copyright>
         <tags>Sitecore</tags>
     </metadata>

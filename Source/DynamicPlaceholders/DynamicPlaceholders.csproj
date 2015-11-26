@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlaceholdersContext.cs" />
     <Compile Include="Events\DynamicPlaceholder.cs" />
     <Compile Include="Pipelines\ExecutePageEditorAction\DynamicReplaceRendering.cs" />
     <Compile Include="Pipelines\GetChromeData\GetDynamicPlaceholderChromeData.cs" />
