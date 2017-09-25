@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>DynamicPlaceholders</id>
-        <version>1.1.0.1</version>
+        <version>1.2.0.1-alpha</version>
         <title>Sitecore Dynamic Placeholders</title>
         <authors>Jason Bert</authors>
         <owners>Fortis Collections</owners>
@@ -13,12 +13,13 @@
         <description>Allows you to add dynamic placeholders in Sitecore
 
 * Requires Sitecore 8</description>
-        <releaseNotes>* Fixed bugs with multiple placeholders of the same name in the same rendering</releaseNotes>
-        <copyright>Copyright 2015</copyright>
+        <releaseNotes>* Added ability to override count with a unique key
+* Updated .NET framework to 4.5.2</releaseNotes>
+        <copyright>Copyright 2017</copyright>
         <tags>Sitecore</tags>
     </metadata>
     <files>
         <file src="content\App_Config\Include\DynamicPlaceholders\DynamicPlaceholders.config" target="content\App_Config\Include\DynamicPlaceholders\DynamicPlaceholders.config" />
-        <file src="lib\net45\DynamicPlaceholders.dll" target="lib\net45\DynamicPlaceholders.dll" />
+        <file src="lib\net452\DynamicPlaceholders.dll" target="lib\net452\DynamicPlaceholders.dll" />
     </files>
 </package>
