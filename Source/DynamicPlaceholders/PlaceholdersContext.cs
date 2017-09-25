@@ -26,17 +26,30 @@ namespace DynamicPlaceholders
 
 		public static string Add(string placeholderName, Guid renderingId)
 		{
-			var placeholder = string.Format("{0}_{1}", placeholderName, renderingId);
-			var count = 0;
-
-			if ((count = Placeholders.Count(dp => dp.StartsWith(placeholder))) > 0)
-			{
-				placeholder = string.Format("{0}_{1}", placeholder, count);
-			}
-
-			Placeholders.Add(placeholder);
-
-			return placeholder;
+            return Add(placeholderName, renderingId, null);
 		}
-	}
+
+        public static string Add(string placeholderName, Guid renderingId, string uniqueKey)
+        {
+            var placeholder = string.Format("{0}_{1}", placeholderName, renderingId);
+
+            if (string.IsNullOrEmpty(uniqueKey))
+            {
+                var count = 0;
+
+                if ((count = Placeholders.Count(dp => dp.StartsWith(placeholder))) > 0)
+                {
+                    placeholder = string.Format("{0}_{1}", placeholder, count);
+                }
+            }
+            else
+            {
+                placeholder = string.Format("{0}_{1}", placeholder, uniqueKey);
+            }
+
+            Placeholders.Add(placeholder);
+
+            return placeholder;
+        }
+    }
 }
