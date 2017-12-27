@@ -1,6 +1,7 @@
 ﻿using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetChromeData;
 using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace DynamicPlaceholders.Pipelines.GetChromeData
@@ -16,10 +17,13 @@ namespace DynamicPlaceholders.Pipelines.GetChromeData
 			{
 				var placeholderKey = args.CustomData["placeHolderKey"] as string;
 				var regex = new Regex(DynamicPlaceholders.PlaceholderKeyRegex.DynamicKeyRegex);
-				var match = regex.Match(placeholderKey);
 
-				if (match.Success && match.Groups.Count > 0)
+			    var matches = regex.Matches(placeholderKey);
+
+				if (matches.Count > 0)
 				{
+				    var match = matches.Cast<Match>().Last();
+
 					var newPlaceholderKey = match.Groups[1].Value;
 
 					args.CustomData["placeHolderKey"] = newPlaceholderKey;
