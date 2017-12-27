@@ -4,6 +4,7 @@ using Sitecore.Data.Items;
 using Sitecore.Diagnostics;
 using Sitecore.Pipelines.GetPlaceholderRenderings;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace DynamicPlaceholders.Pipelines.GetPlaceholderRenderings
@@ -17,11 +18,12 @@ namespace DynamicPlaceholders.Pipelines.GetPlaceholderRenderings
 			var currentPlaceholderKey = args.PlaceholderKey;
 			var temporaryPlaceholderKey = string.Empty;
 			var regex = new Regex(DynamicPlaceholders.PlaceholderKeyRegex.DynamicKeyRegex);
-			var match = regex.Match(currentPlaceholderKey);
+		    var matches = regex.Matches(currentPlaceholderKey);
 
-			if (match.Success && match.Groups.Count > 0)
-			{
-				temporaryPlaceholderKey = match.Groups[1].Value;
+		    if (matches.Count > 0)
+		    {
+		        var match = matches.Cast<Match>().Last();
+                temporaryPlaceholderKey = match.Groups[1].Value;
 			}
 			else
 			{
