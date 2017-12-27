@@ -24,7 +24,7 @@ namespace DynamicPlaceholders.Pipelines.GetChromeData
 				{
 				    var match = matches.Cast<Match>().Last();
 
-					var newPlaceholderKey = match.Value;
+					var newPlaceholderKey = match.Groups[1].Value;
 
 					args.CustomData["placeHolderKey"] = newPlaceholderKey;
 
