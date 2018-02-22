@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>DynamicPlaceholders</id>
-        <version>1.2.0.1</version>
+        <version>1.2.0.2</version>
         <title>Sitecore Dynamic Placeholders</title>
         <authors>Jason Bert</authors>
         <owners>Fortis Collections</owners>
@@ -13,9 +13,8 @@
         <description>Allows you to add dynamic placeholders in Sitecore
 
 * Requires Sitecore 8</description>
-        <releaseNotes>* Added ability to override count with a unique key
-* Updated .NET framework to 4.5.2</releaseNotes>
-        <copyright>Copyright 2017</copyright>
+        <releaseNotes>* Changed Regex pattern to only match on the last occurrence</releaseNotes>
+        <copyright>Copyright 2018</copyright>
         <tags>Sitecore</tags>
     </metadata>
     <files>
