@@ -30,7 +30,7 @@ namespace DynamicPlaceholders.Events
 
 						if (match.Success && match.Groups.Count > 0)
 						{
-							var parentRenderingId = "{" + key.Substring(key.Length - 36, 36).ToUpper() + "}";
+							var parentRenderingId = "{" + key.Substring(key.LastIndexOf("_") - 36, 36).ToUpper() + "}";
 
 							if (renderingReferences.All(r => r.UniqueId.ToUpper() != parentRenderingId))
 							{
